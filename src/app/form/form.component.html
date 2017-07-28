@@ -1,11 +1,8 @@
-<form class="">
+<form name="userForm" ng-submit="submitForm()" novalidate>
   
   <fieldset class="field-group">
-    <caption>Pet Information</caption>
-    <div>
-      <label for="">Pet Name</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
-    </div>
+    <legend>Pet Information</legend>
+    <app-pet-name></app-pet-name>
     <div>
       <label for="">Type of Pet (eg Dog or Cat)</label>
       <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
@@ -25,7 +22,7 @@
   </fieldset>
 
   <fieldset>
-    <caption>Owner Information</caption>
+    <legend>Owner Information</legend>
     <div>
       <label for="">Title</label>
       <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
@@ -40,7 +37,7 @@
     </div>
     <div>
       <label for="">Email</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
+      <input class="textfield" type="email" name="" id="" value="" placeholder=""/>
     </div>
     <div>
       <label for="">Contact Telephone</label>
@@ -49,7 +46,7 @@
   </fieldset>
 
   <fieldset class="field adaptive gaps next-desktop about-pet">
-    <caption>Policy Information</caption>
+    <legend>Policy Information</legend>
     <div>
       <label for="">Cover Start Date</label>
       <input class="textfield" type="text" name="" id="" value="" placeholder=""/>

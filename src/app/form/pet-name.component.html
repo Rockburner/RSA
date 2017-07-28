@@ -1,0 +1,5 @@
+<div ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+  <label for="pet-name">Pet Name</label>
+  <input class="textfield" type="text" name="pet-name" id="pet-name" ng-model="user.name" required placeholder=""/>
+  <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+</div>
