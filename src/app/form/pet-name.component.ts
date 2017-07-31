@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PetNameComponent implements OnInit {
 
+// do validation here
   constructor() { }
 
   ngOnInit() {

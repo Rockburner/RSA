@@ -1,59 +1,29 @@
 <form name="userForm" ng-submit="submitForm()" novalidate>
   
   <fieldset class="field-group">
-    <legend>Pet Information</legend>
+    <legend>{{legendPet}}</legend>
     <app-pet-name></app-pet-name>
-    <div>
-      <label for="">Type of Pet (eg Dog or Cat)</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
-    </div>
-    <div>
-      <label for="">Gender</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
-    </div>
-    <div>
-      <label for="">Date of Birth</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
-    </div>
-    <div>
-      <label for="">Has the pet been chipped or tagged</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
-    </div>
+    <app-pet-type></app-pet-type>
+    <app-pet-gender></app-pet-gender>
+    <app-pet-dob></app-pet-dob>
+    <app-pet-chipped></app-pet-chipped>
   </fieldset>
 
   <fieldset>
-    <legend>Owner Information</legend>
-    <div>
-      <label for="">Title</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
-    </div>
-    <div>
-      <label for="">Name</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
-    </div>
-    <div>
-      <label for="">Date of Birth</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
-    </div>
-    <div>
-      <label for="">Email</label>
-      <input class="textfield" type="email" name="" id="" value="" placeholder=""/>
-    </div>
-    <div>
-      <label for="">Contact Telephone</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
-    </div>
+    <legend>{{legendOwner}}</legend>
+    <app-owner-title></app-owner-title>
+    <app-owner-name></app-owner-name>
+    <app-owner-dob></app-owner-dob>
+    <app-owner-email></app-owner-email>
+    <app-owner-contact></app-owner-contact>
   </fieldset>
 
   <fieldset class="field adaptive gaps next-desktop about-pet">
-    <legend>Policy Information</legend>
-    <div>
-      <label for="">Cover Start Date</label>
-      <input class="textfield" type="text" name="" id="" value="" placeholder=""/>
-    </div>
-    <div class="group buttons-group adaptive footer-btn">
-      <button class="btn btn-primary next-btn-tab next-btn-tab-about" (click)="submitForm()">Submit</button>
-    </div>
+    <legend>{{legendPolicy}}</legend>
+    <app-policy-start></app-policy-start>
   </fieldset>
 
+    <div class="submit group buttons-group adaptive footer-btn">
+      <button class="btn btn-primary next-btn-tab next-btn-tab-about" (click)="submitForm()">{{buttonTxt}}</button>
+    </div>
 </form>

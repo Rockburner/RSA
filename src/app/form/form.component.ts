@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
+  public legendPet: string = "Pet Information";
+  public legendOwner: string = "Owner Information";
+  public legendPolicy: string = "Policy Information";
+  public buttonTxt: string = "Continue";
+
   constructor() { }
 
   ngOnInit() {

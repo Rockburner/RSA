@@ -1,9 +1,8 @@
-form { width:90%; }
 
-fieldset { display:inline; width:48%; padding:2%; vertical-align:top; }
 
-fieldset:last-child { width:100%; }
-
-legend { width:100%; display:block; text-align:left;}
-label { width:100%; }
-input { width:100%; }
+  form {padding:10px;display:block; }
+  fieldset { width:calc(45% - 0.3em); display:inline-block; vertical-align:top; padding:2%;border-radius:20px; background:rgba(0,116,34,0.5);margin-left:2%;margin-right:2%;  }
+  fieldset:nth-child(2n+2) { margin-left:4%; }
+  fieldset:last-of-type { width:96%; }
+  legend {  display:inline-block; width:100%; padding-top:2.5em;}
+  div.submit { width:96%; margin:2em 2%; }
