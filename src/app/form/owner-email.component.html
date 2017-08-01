@@ -1,4 +1,6 @@
-    <div>
-      <label for="">Email</label>
-      <input class="textfield" type="email" name="" id="" value="" placeholder=""/>
-    </div>
+<div ng-class="{ 'has-error' : petPolicyForm.owneremail.$invalid && !petPolicyForm.owneremail.$pristine }">
+  <label for="owneremail">Email</label>
+  <input class="textfield" type="email" name="owneremail" id="owneremail" value="" placeholder="Your Email Address"/>
+  <p ng-show="petPolicyForm.owneremail.$invalid && !petPolicyForm.owneremail.$pristine" class="help-block">Your email address is required.</p>
+
+</div>
