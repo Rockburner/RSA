@@ -1,5 +1,5 @@
-<div ng-class="{ 'has-error' : petPolicyForm.petname.$invalid && !petPolicyForm.petname.$pristine }">
+<div class="{{errorClass}}">
   <label for="pet-name">Pet Name</label>
-  <input class="textfield" type="text" name="pet-name" id="petname" ng-model="petname" required placeholder="" minlength="2" [(ngModel)]="petPolicyForm.petname" #name="ngModel"/>
-  <p ng-show="petPolicyForm.petname.$invalid && !petPolicyForm.petname.$pristine" class="help-block">Pet's name is required.</p>
+  <input class="textfield" type="text" name="pet-name" id="petname" ng-model="petname" required placeholder="" minlength="2" (blur)="onBlur($event)"/>
+  <p class="help-block">{{errorMessage}}</p>
 </div>

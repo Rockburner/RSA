@@ -12,6 +12,10 @@ export class FormComponent implements OnInit {
   public legendPolicy: string = "Policy Information";
   public buttonTxt: string = "Continue";
 
+  submitForm(){
+    // post form data to console here
+  }
+
   constructor() { }
 
   ngOnInit() {
